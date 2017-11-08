@@ -40,3 +40,6 @@ apt-get install -y openjdk-9-jdk-headless
 
 #needed when install niftyreg
 apt-get install -y cmake-curses-gui curl libpng16-dev zlib1g-dev
+
+#needed for bedpostx-parallel (vasst-dev)
+apt-get install -y parallel
