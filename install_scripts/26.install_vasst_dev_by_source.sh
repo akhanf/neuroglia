@@ -30,6 +30,10 @@ rm -rf $TMP_DIR
 
 
 git clone https://github.com/akhanf/vasst-dev $INSTALL/vasst-dev
+pushd $INSTALL/vasst-dev
+git checkout v0.0.1
+popd
+
 
 #if octave exists:
 if [ -e /etc/octave.conf ]

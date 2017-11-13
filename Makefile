@@ -1,6 +1,6 @@
 ORG=khanlab
 NAME=neuroglia-vasst-dev
-VERSION = 0.0.1h
+VERSION = 0.0.2
 
 DOCKER_NAME=$(ORG)/$(NAME):$(VERSION)
 DOCKER_LATEST=$(ORG)/$(NAME):latest
