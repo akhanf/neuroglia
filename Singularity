@@ -112,14 +112,16 @@ export LD_LIBRARY_PATH=/usr/lib/fsl/5.0:${LD_LIBRARY_PATH}
 
 
 #freesurfer
-export PATH=/opt/freesurfer/bin:$PATH
 export FREESURFER_HOME=/opt/freesurfer
-export FSFAST_HOME=/opt/freesurfer/fsfast
+export FSFAST_HOME=$FREESURFER_HOME/fsfast
 export FSF_OUTPUT_FORMAT=nii.gz
-export SUBJECTS_DIR=/opt/freesurfer/subjects
-export MNI_DIR=/opt/fresurfer/mni
-export MINC_BIN_DIR=/opt/freesurfer/mni/bin
-export MINC_LIB_DIR=/opt/freesurfer/mni/lib
+export SUBJECTS_DIR=$FREESURFER_HOME/subjects
+export MNI_DIR=$FREESURFER_HOME/mni
+export MINC_BIN_DIR=$FREESURFER_HOME/mni/bin
+export MINC_LIB_DIR=$FREESURFER_HOME/mni/lib
+export MNI_PERL5LIB=$FREESURFER_HOME/mni/lib/perl5/5.8.5
+export PERL5LIB=$FREESURFER_HOME/mni/lib/perl5/5.8.5
+export PATH=$FREESURFER_HOME/bin:$MINC_BIN_DIR:$PATH
 
 #ants
 export PATH=/opt/ants:$PATH
