@@ -43,3 +43,6 @@ apt-get install -y cmake-curses-gui curl libpng16-dev zlib1g-dev
 
 #needed for bedpostx-parallel (vasst-dev)
 apt-get install -y parallel
+
+#needed for QAtools (also requires imagemagick
+apt-get install -y gawk 
