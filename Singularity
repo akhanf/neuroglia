@@ -53,7 +53,7 @@ bash 16.install_ants_by_binary.sh /opt
 bash 17.install_dcm2niix_by_binary.sh /opt
 bash 21.install_MRtrix3_by_source_sudo.sh /opt
 bash 22.install_ashs_by_binary.sh /opt
-bash 23.install_heudiconv_by_source.sh /opt
+#bash 23.install_heudiconv_by_source.sh /opt
 bash 24.install_bids-validator_sudo.sh
 bash 25.install_niftyreg_by_source.sh /opt
 bash 26.install_vasst_dev_by_source.sh /opt
@@ -159,7 +159,7 @@ export PATH=/opt/ashs/ashs-fastashs/bin:$PATH
 #export MANPATH=/opt/minc/1.9.15/man:${MANPATH}
 
 #heudiconv
-export PATH=/opt/heudiconv:$PATH
+#export PATH=/opt/heudiconv:$PATH
 
 #niftyreg
 export LD_LIBRARY_PATH=/opt/niftyreg/lib:$LD_LIBRARY_PATH 
@@ -198,9 +198,16 @@ export PATH=/opt/unring/bin:$PATH
 #dke
 export PATH=/opt/dke:$PATH
 
-#matlab on graham (requires user to be on sharcnet matlab users list)
-export PATH=/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/matlab/2017a:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/matlab/2017a/bin:$PATH
+#qatools
+export QA_TOOLS=/opt/QAtools_v1.2
+export PATH=$QA_TOOLS:$PATH
 
+#matlab on graham (requires user to be on sharcnet matlab users list)
+export JAVA_HOME=/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/java/1.8.0_121
+export MLM_LICENSE_FILE=/cvmfs/restricted.computecanada.ca/config/licenses/matlab/inst_uwo/graham.lic
+export PATH=/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/matlab/2017a:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/matlab/2017a/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/java/1.8.0_121:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/java/1.8.0_121/bin:$PATH
+export _JAVA_OPTIONS=-Xmx256m
+export LIBRARY_PATH=/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/java/1.8.0_121/lib
 
 %files
 #########
