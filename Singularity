@@ -53,7 +53,7 @@ bash 16.install_ants_by_binary.sh /opt
 bash 17.install_dcm2niix_by_binary.sh /opt
 bash 21.install_MRtrix3_by_source_sudo.sh /opt
 bash 22.install_ashs_by_binary.sh /opt
-#bash 23.install_heudiconv_by_source.sh /opt
+bash 23.install_heudiconv_by_source.sh /opt
 bash 24.install_bids-validator_sudo.sh
 bash 25.install_niftyreg_by_source.sh /opt
 bash 26.install_vasst_dev_by_source.sh /opt
@@ -159,7 +159,7 @@ export PATH=/opt/ashs/ashs-fastashs/bin:$PATH
 #export MANPATH=/opt/minc/1.9.15/man:${MANPATH}
 
 #heudiconv
-#export PATH=/opt/heudiconv:$PATH
+export PYTHONPATH=/opt/heudiconv:$PYTHONPATH
 
 #niftyreg
 export LD_LIBRARY_PATH=/opt/niftyreg/lib:$LD_LIBRARY_PATH 
